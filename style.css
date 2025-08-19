@@ -1,0 +1,193 @@
+/* Paleta de Colores
+   Fondo: #121212 (Gris Oscuro)
+   Texto Principal: #F5F5F5 (Blanco Roto)
+   Acento: #FF8C00 (Naranja Oscuro)
+   Secundario: #606060 (Gris Medio)
+*/
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #F5F5F5;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #FF8C00;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #F5F5F5;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080/1C1C1C/A9A9A9?text=Iron+Art+Hero');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-description {
+    color: #A9A9A9;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+/* Galería de Productos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #242424;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-card h3 {
+    margin: 20px 0 10px;
+    color: #FF8C00;
+}
+
+.product-card p {
+    padding: 0 20px 20px;
+    color: #A9A9A9;
+}
+
+/* Sección de Diseño a Medida */
+#custom {
+    background-color: #242424;
+    color: #F5F5F5;
+}
+
+#custom h2 {
+    color: #FF8C00;
+}
+
+#custom p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+/* Sección de Contacto */
+#contact {
+    background-color: #121212;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #A9A9A9;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #FF8C00;
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Pie de Página */
+.site-footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #000;
+    color: #A9A9A9;
+}
+
+/* Media Queries para Optimización Móvil */
+@media (max-width: 768px) {
+    /* Ajustes para tabletas y celulares */
+    
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em; /* Reduce el tamaño del título principal */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em; /* Reduce el tamaño del subtítulo */
+    }
+
+    section {
+        padding: 50px 20px; /* Reduce el espaciado entre secciones */
+    }
+
+    h2 {
+        font-size: 2em; /* Reduce el tamaño de los títulos de sección */
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        gap: 20px;
+    }
+
+    .product-card {
+        max-width: 90%; /* Asegura que la tarjeta ocupe casi todo el ancho */
+        margin: 0 auto;
+    }
+}
