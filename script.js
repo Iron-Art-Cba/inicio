@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Aquí podrías agregar efectos de desplazamiento o validaciones si decides
     // incluir un formulario en el futuro.
 });
+// script.js
