@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #121212;
+    background-color: #000000;
     color: #F5F5F5;
     line-height: 1.6;
     overflow-x: hidden;
@@ -117,7 +117,7 @@ section {
 
 /* Sección de Contacto */
 #contact {
-    background-color: #121212;
+    background-color: #000000;
 }
 
 .social-links {
@@ -189,5 +189,41 @@ section {
     .product-card {
         max-width: 90%; /* Asegura que la tarjeta ocupe casi todo el ancho */
         margin: 0 auto;
+    }
+}
+
+/* Nuevo estilo para el logo */
+.logo {
+    width: 420px; /* Ajusta este valor si necesitas que el logo sea más grande o más pequeño */
+    height: auto;
+    margin-bottom: 20px;
+    /* border-radius: 50%; Esto asegura que el borde sea circular, por si acaso */
+}
+
+/* Ajuste del hero para la visibilidad */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080/1C1C1C/A9A9A9?text=Iron+Art+Hero');
+    background-size: cover;
+    background-position: center;
+    /* Elimina el padding si lo tenías */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .logo {
+        width: 150px; /* Tamaño del logo en móviles */
     }
 }
